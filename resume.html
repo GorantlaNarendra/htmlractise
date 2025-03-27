@@ -1,0 +1,103 @@
+import React from "react";
+import "./Portfolio.css";
+
+const Portfolio = () => {
+  return (
+    <div className="portfolio-container">
+      <header className="header">
+        <h1>Narendra Gorantla</h1>
+        <h2>Software Engineer</h2>
+        <p>
+          📞 6305181834 | ✉️ <a href="mailto:narendra7997266490@gmail.com">narendra7997266490@gmail.com</a>
+        </p>
+        <p>
+          🔗 <a href="https://www.linkedin.com/in/">LinkedIn</a> | 💻 <a href="https://github.com/GorantlaNarendra">GitHub</a> | 🌐 <a href="#">Portfolio</a>
+        </p>
+      </header>
+      <section className="experience">
+        <h2>Experience</h2>
+        <div className="job">
+          <h3>Jio Private Limited</h3>
+          <p><strong>Software Engineer</strong> | July 2022 – Present</p>
+          <h4>Unified Assurance Platform (UAP) - Team Member</h4>
+          <ul>
+            <li>Developed UAP, a microservices-based system for trouble ticket management and workflow automation.</li>
+            <li>Designed and implemented REST APIs for inter-service communication and external system integration.</li>
+            <li>Integrated Apache Kafka for event-driven messaging between microservices.</li>
+            <li>Worked with MongoDB, Elasticsearch, and Redis for scalable storage, search, and caching.</li>
+          </ul>
+          <h4>Management Node Controller (MNC) - Independent Developer</h4>
+          <ul>
+            <li>Designed and developed MNC, a system for monitoring alarms, performance counters, and configurations of registered nodes.</li>
+            <li>Implemented health checks for Redis and Elasticsearch to monitor database health.</li>
+            <li>Built an interface between MNC and NMS (Network Management System) for sharing performance data, alarms, and configurations.</li>
+          </ul>
+        </div>
+      </section>
+      <section className="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><strong>Programming Languages:</strong> Java, Python</li>
+          <li><strong>Frameworks & Technologies:</strong> Spring Boot, REST APIs, Microservices Architecture</li>
+          <li><strong>Databases:</strong> MongoDB, Elasticsearch, Redis</li>
+          <li><strong>Messaging & Streaming:</strong> Apache Kafka</li>
+          <li><strong>DevOps & Deployment:</strong> Docker, Kubernetes</li>
+        </ul>
+      </section>
+      <section className="development">
+        <h2>Professional Development</h2>
+        <ul>
+          <li>Currently learning Python, NumPy, Pandas, and Machine Learning for AI and data processing.</li>
+          <li>Strengthening knowledge of data structures in Java and Python to improve problem-solving skills.</li>
+          <li>Exploring AI and data science concepts to integrate intelligent automation into software development.</li>
+        </ul>
+      </section>
+    </div>
+  );
+};
+
+export default Portfolio;
+
+/* Portfolio.css */
+.portfolio-container {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.experience, .skills, .development {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: square;
+}
